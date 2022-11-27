@@ -4,14 +4,12 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
 
 
 @Entity
-@Table(name = "temp_categories")
-public class Category {
-    public Category(){
+@Table(name = "temp_things")
+public class Thing {
+    public Thing(){
 
     }
     @Id
@@ -22,6 +20,10 @@ public class Category {
     private String description;
     @Column
     private boolean publication;
+    @Column
+    private int count;
+    @Column
+    private int target;
 
     public int getId() {
         return id;
@@ -53,5 +55,21 @@ public class Category {
 
     public void setPublication(boolean publication) {
         this.publication = publication;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getTarget() {
+        return target;
+    }
+
+    public void setTarget(int target) {
+        this.target = target;
     }
 }
