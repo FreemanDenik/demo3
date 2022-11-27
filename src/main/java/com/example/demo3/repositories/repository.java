@@ -1,6 +1,6 @@
 package com.example.demo3.repositories;
 
 public class repository {
-    public repository() {
+    public void repository1() {
     }
 }
