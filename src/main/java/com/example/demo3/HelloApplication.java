@@ -7,5 +7,9 @@ import jakarta.ws.rs.core.Application;
 public class HelloApplication extends Application {
         ///авпвап
     //мммммммммм
-    //ииииииииии
+    //ииииииииии///дотло
+
+    ///вапва
+
+    //вапваппва
 }
