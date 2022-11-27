@@ -1,4 +1,4 @@
-package com.example.demo3;
+package com.example.demo3.resources;
 
 import com.example.demo3.models.Category;
 import jakarta.persistence.*;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Path("/go")
-public class HelloResource {
+public class GoResource {
 
 
     @PersistenceContext
