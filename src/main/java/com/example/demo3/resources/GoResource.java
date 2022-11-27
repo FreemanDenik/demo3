@@ -25,6 +25,6 @@ public class GoResource {
         TypedQuery<Category> categories = em.createQuery("select c from Category c", Category.class);
         List<Category> arr = categories.getResultList();
 
-        return "Hello, World!" + arr.stream().map(w -> w.getTitle()).collect(Collectors.joining(","));
+        return "Hello, World!";
     }
 }
